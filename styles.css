@@ -6,6 +6,7 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 .container {
     text-align: center;
@@ -13,6 +14,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
 }
 input[type="text"] {
     padding: 10px;
@@ -20,6 +22,7 @@ input[type="text"] {
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #ccc;
+    transition: background-color 0.3s, color 0.3s;
 }
 button {
     padding: 10px 20px;
@@ -28,6 +31,7 @@ button {
     background-color: #007BFF;
     color: #fff;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 button:hover {
     background-color: #0056b3;
@@ -35,10 +39,48 @@ button:hover {
 .output {
     margin-top: 20px;
     font-weight: bold;
+    transition: color 0.3s;
 }
 select {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+.dark-mode input[type="text"],
+.dark-mode select {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+}
+.dark-mode .container {
+    background-color: #444;
+}
+.dark-mode button {
+    background-color: #444;
+    color: #fff;
+}
+.dark-mode button:hover {
+    background-color: #666;
+}
+#nightModeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+#nightModeToggle:hover {
+    background-color: #3f444b;
 }

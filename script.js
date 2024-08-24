@@ -22,3 +22,7 @@ function convert() {
 
     document.getElementById("outputResult").textContent = result;
 }
+
+function toggleNightMode() {
+    document.body.classList.toggle("dark-mode");
+}
